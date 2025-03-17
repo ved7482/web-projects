@@ -23,4 +23,4 @@ To-Do:
 
 ## Final Project Demo
 
-[View the styled blog page demo](https://ved7482.github.io/web-projects/assignments/3)blog-page-with-css)
+[View the styled blog page demo](https://ved7482.github.io/web-projects/assignments/3-blog-page-with-css)

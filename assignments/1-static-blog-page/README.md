@@ -17,4 +17,4 @@ The page should start with a DOCTYPE declaration and include the essential HTML 
 * `<body>`
 
 ## Final Project Demo
-[View the blog page demo](https://ved7482.github.io/web-projects/assignments/1)static-blog-page)
+[View the blog page demo](https://ved7482.github.io/web-projects/assignments/1-static-blog-page)
