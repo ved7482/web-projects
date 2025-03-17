@@ -1,0 +1,146 @@
+/*JAI SHREE RAM*/
+
+@font-face {
+    font-family: gilroy;
+    src: url(assets/fonts/Gilroy-ExtraBold.ttf);
+}
+@font-face {
+    font-family: juana-regular;
+    src: url(assets/fonts/Fontspring-DEMO-juanaalt-regular.otf);
+}
+@font-face {
+    font-family: juana-semibold;
+    src: url(assets/fonts/Fontspring-DEMO-juana-semibold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #f9fafd;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    padding: 2rem 1.7rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.header {
+    font-family: gilroy;
+}
+.header>h1 {
+    font-size: 2.7rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+.header>h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h3 {
+    line-height: 1.1;
+}
+
+.products {
+    margin: 1.8rem auto;
+    width: 74vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 3rem;
+}
+
+.product {
+    border-radius: 0.5rem;
+    padding: 2rem 1rem;
+    background-color: white;
+    box-shadow: 0px 2px 5px -1px rgba(21, 21, 32, 0.25), 0px 1px 3px -1px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    line-height: 1.2;
+}
+
+.product-img {
+    overflow: hidden;
+}
+
+.product-img img {
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.product-details {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-details h3 {
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-family: Helvetica, sans-serif;
+}
+.product-details p {
+    font-size: 1rem;
+    color: rgb(23, 23, 23);
+    margin-block: 0.5rem 1rem;
+    text-align: center;
+    font-family: juana-regular;
+}
+.product-details span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background-color: #dcdde17b;
+    font-family: Helvetica, sans-serif;
+  }
+
+img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    object-fit: cover;
+}
+
+.btm::before {
+    content: "";
+    display: block;
+    width: 81vw;
+    border-top: 0.2rem solid rgb(245, 240, 240);
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 10px rgba(136, 135, 135, 0.2);
+}
+
+.btm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 1.5rem 0.5rem;
+    color: rgb(137, 137, 137);
+    background-color: #f9fafd;
+    font-family: juana-semibold;
+}
