@@ -10,16 +10,16 @@ To-Do:
 
 ## Skills Covered
 
-- ✅ CSS styling and applying selectors
-- ✅ Text formatting (fonts, sizes, colors)
-- ✅ Understanding and using padding/margins
-- ✅ Mastering the box model for layout control
+✅ CSS styling and applying selectors  
+✅ Text formatting (fonts, sizes, colors)  
+✅ Understanding and using padding/margins  
+✅ Mastering the box model for layout control  
 
 ## Resources
 
-- ✅ [CSS Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-- ✅ [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
-- ✅ [CSS Fonts](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals)
+[CSS Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)  
+[CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)  
+[CSS Fonts](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals)  
 
 ## Final Project Demo
 
