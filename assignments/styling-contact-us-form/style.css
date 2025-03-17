@@ -1,0 +1,159 @@
+/*JAI SHREE RAM*/
+
+@font-face {
+    font-family: gilroy;
+    src: url(assets/fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+    font-family: inter;
+    src: url(assets/fonts/Inter-MediumItalic.otf);
+}
+@font-face {
+    font-family: california;
+    src: url(assets/fonts/dealerplatecalifornia.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+.container {
+    width: 35%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 25px 33px;
+    box-shadow: 0px 0px 20px 2px rgb(196, 196, 196);
+}
+
+.container h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: 650;
+    font-family: california;
+}
+.container h1::selection {
+    color: rgb(33, 193, 252);
+    background-color: #323232;
+}
+.container h1:hover {
+    text-shadow: 10px 8px 10px rgb(161, 161, 161);
+}
+
+label {
+    font-size: 19px;
+    font-weight: 300;
+    color: rgb(83, 83, 83);
+    font-family: gilroy;
+}
+
+#name {
+    text-transform: capitalize;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inter;
+    box-shadow: 0 0 8px 2px #f0f0f0;
+    color: rgb(68, 57, 57);
+}
+
+::placeholder {
+    color: rgb(195, 195, 195);
+}
+
+input:focus {
+    color: rgb(138, 32, 32);
+    outline: none;
+    border: 0.2px solid blue;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+input:hover, textarea:hover {
+    border-color: #007BFF;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 11px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inter;
+    box-shadow: 0 0 8px 2px #f0f0f0;
+    color: rgb(68, 57, 57);
+}
+textarea:focus {
+    color: rgb(138, 32, 32);
+    outline: none;
+    border: 1px solid blue;
+}
+
+button {
+    width: 100%;
+    padding: 11px;
+    margin: 8px 0px 40px 0px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(8, 140, 241);
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    font-family: gilroy;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+button:hover {
+    background-color: rgb(50, 125, 205);
+    /* animation: pulse 1s infinite; */
+    animation: pulse 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s infinite  both;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
