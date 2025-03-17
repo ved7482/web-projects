@@ -1,0 +1,145 @@
+@font-face {
+  font-family: satoshi;
+  src: url(assets/fonts/Satoshi-Variable.ttf);
+}
+@font-face {
+  font-family: gambetta;
+  src: url(assets/fonts/Gambetta-LightItalic.otf);
+}
+@font-face {
+  font-family: chillax;
+  src: url(assets/fonts/Chillax-Light.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+}
+
+main {
+  width: 100%;
+}
+
+.section-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2.8rem;
+}
+.section-1 img {
+  width: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.section-1 h1 {
+  color: #DAC5A7;
+  text-transform: capitalize;
+  font-size: 3.7rem;
+  text-align: center;
+  line-height: 1.1;
+  font-weight: 200;
+  font-family: "satoshi", sans-serif;
+}
+.section-1 h1 i {
+  font-family: gambetta;
+}
+.section-1 p {
+  color: #D4C0A2;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0.9rem 0rem;
+  font-family: chillax;
+  opacity: 0.9;
+}
+.section-1 p br {
+  display: none;
+}
+
+.section-2 {
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+.section-2 .marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.section-2 .marquee::after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0e0e0e, transparent);
+}
+.section-2 .marquee::before {
+  content: "";
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(to left, #0e0e0e, transparent);
+  z-index: 1;
+}
+.section-2 .marquee .logos {
+  padding: 0rem 1.5rem;
+  display: flex;
+  gap: 3rem;
+  animation: marquee 20s linear infinite both;
+}
+.section-2 .marquee .logos svg {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #D3BEA1;
+}
+
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .section-1 img {
+    width: 33%;
+  }
+  .section-1 h1 {
+    font-size: 8.2rem;
+  }
+  .section-1 p {
+    font-size: 1.3rem;
+  }
+  .section-1 p br {
+    display: block;
+  }
+  .section-2 {
+    padding: 2rem 0rem;
+  }
+  .section-2 html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .section-2 .marquee {
+    width: 80%;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
