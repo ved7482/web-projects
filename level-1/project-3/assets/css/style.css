@@ -135,10 +135,10 @@ html, body{
 }
 
 #img1 {
-    background-image: url(img/image.png);
+    background-image: url(../img/image.png);
 }
 #img2 {
-    background-image: url(img/SmartHomeDashboard.jpg);
+    background-image: url(../img/SmartHomeDashboard.jpg);
 }
 /* .project .project-img:hover {
     scale: 1.05;
