@@ -8,3 +8,113 @@ html, body {
   width: 100%;
   height: 100%;
 }
+
+main {
+  width: 100%;
+  padding: 1.4rem;
+  padding-top: 4.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+main .hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .hero-text img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .hero-text .text {
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+}
+main .hero-text .text p {
+  text-transform: uppercase;
+  font-size: 0.94rem;
+}
+main .hero-img-txt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7em;
+}
+main .hero-img-txt .top {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .hero-img-txt .top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .hero-img-txt .btm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+main .hero-img-txt .btm h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+}
+main .hero-img-txt .btm p {
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.3;
+  opacity: 0.9;
+  font-family: monospace;
+}
+main .hero-img-txt .btm .services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .hero-img-txt .btm .services .service {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .hero-img-txt .btm .services p {
+  font-size: 1.77em;
+  font-weight: 100;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  opacity: 0.84;
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 4rem;
+    gap: 3.2rem;
+  }
+  main .hero-img-txt {
+    flex-direction: row-reverse;
+    gap: 3.6em;
+  }
+  main .hero-img-txt .btm {
+    padding: 1.4rem 0rem;
+  }
+  main .hero-img-txt .btm h1 {
+    font-size: 4.7rem;
+    letter-spacing: 0.01em;
+  }
+  main .hero-img-txt .btm p {
+    font-size: 1.8em;
+  }
+  main .hero-img-txt .btm .services {
+    margin-top: auto;
+  }
+  main .hero-img-txt .btm .services .service p {
+    font-size: 1.8em;
+  }
+}

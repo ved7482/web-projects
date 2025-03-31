@@ -11,3 +11,132 @@ html, body {
     height: 100%;
 }
 
+main {
+    width: 100%;
+    padding: 1.4rem;
+    padding-top: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+
+    .hero-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            display: flex;
+            justify-content: space-between;
+            font-family: monospace;
+
+            p {
+                text-transform: uppercase;
+                font-size: 0.94rem;
+            }
+        }
+    }
+
+    .hero-img-txt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.7em;
+
+        .top {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .btm {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7em;
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 100;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                line-height: 1;
+            }
+            
+            p {
+                font-size: 1.2rem;
+                letter-spacing: 0.05rem;
+                line-height: 1.3;
+                opacity: 0.9;
+                font-family: monospace;
+            }
+
+            .services {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                .service {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                p {
+                    font-size: 1.77em;
+                    font-weight: 100;
+                    font-family: sans-serif;
+                    text-transform: uppercase;
+                    opacity: 0.84;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        padding: 4rem;
+        gap: 3.2rem;
+
+        .hero-img-txt {
+            flex-direction: row-reverse;
+            gap: 3.6em;
+
+            .btm {
+                padding: 1.4rem 0rem;
+
+                h1 {
+                    font-size: 4.7rem;
+                    letter-spacing: 0.01em;
+                }
+
+                p {
+                    font-size: 1.8em;
+                }
+
+                .services {
+                    margin-top: auto;   
+
+                    .service {
+                        p {
+                            font-size: 1.8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
