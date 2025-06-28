@@ -1,0 +1,199 @@
+/*JAI SHREE RAM*/
+
+@font-face {
+    font-family: gilroyr;
+    src: url(assets/font/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: gilroyi;
+    src: url(assets/font/Gilroy-ThinItalic.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroyr;
+}
+
+html, body{
+    height: 100vh;
+    width: 100%;
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+#nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+#nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 2px; */
+}
+
+#nav-left h3 {
+    font-size: 18px;
+    font-weight: 590;
+    border: 1.4px solid  black;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+#nav-left i {
+    font-size: 16px;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    padding: 7.8px;
+}
+
+#nav-center h1 {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#nav-right button {
+    padding: 7px 10px;
+    border-radius: 50px;   
+    font-size: 16px;
+    font-weight: 550;
+}
+
+#btn1 {
+    border: 1.4px solid  black;
+    background-color: lightgrey;
+}
+
+#btn2 {
+    border: none;
+    color: white;
+    background-color: orangered;
+}
+
+#container>h1 {
+    font-size: 170px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;      /*2 prop.=> object-fit: cover; {Use:- uncompresing the img} is use when it is to be applied to 'img' tag. Agaar div ke bg me img la ge rehe  he to background-size: cover;   */
+    object-position: top;   /*to have the top view of the img*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 27px;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
+}
+
+#img1 {
+    /* rotate: -10deg; */
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+#img2 {
+    transform: translate(-50%,-50%) rotate(-15deg);
+}
+#img3 {
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+
+#bottom-left {
+    position: absolute;
+    bottom: 5%;
+    left: 3.5%;
+    font-size: 16px;
+}
+
+.dot {
+    height: 5px;
+    width: 6px;
+    background-color: red;
+    border-radius: 90%;
+}
+
+#bottom {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-right {
+    width: 30%;
+    height: 100px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-weight: 300;
+    /* display: flex;
+    flex-direction: column; */
+    font-family: gilroyi;
+    gap: 0px;
+}
+
+#bottom-right-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-right-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bottom-right-top i {
+    border: none;
+    font-size: 20px;
+}
+
+#bottom-center {   
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bottom-center i {
+    border: none;
+    font-size: 30px;
+}
+
+#bottom-center::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1.5px solid black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}

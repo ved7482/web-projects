@@ -1,0 +1,27 @@
+/*JAI SHREE RAM*/
+
+@font-face {
+    font-family: helvetica;
+    src: url(assets/fonts/Helvetica.ttf);
+}
+@font-face {
+    font-family: helvetica-rounded;
+    src: url(assets/fonts/Helvetica-Rounded-LT-Std-Bold-Condensed-Oblique.otf);
+}
+@font-face {
+    font-family: helvetica-oblique;
+    src: url(assets/fonts/Helvetica-Oblique.ttf);
+}
+@font-face {
+    font-family: helvetica-bold-oblique;
+    src: url(assets/fonts/Helvetica-Bold-Oblique.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}

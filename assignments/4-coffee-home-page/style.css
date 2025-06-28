@@ -1,0 +1,187 @@
+/* JAI SHREE RAM */
+
+@font-face {
+    font-family: gilroy;
+    src: url(assets/fonts/Gilroy-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    width: 100%;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+}
+
+.top {
+    height: 88px;
+    width: 100%;
+}
+
+.title {
+    font-family: gilroy;
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.tabs {
+    background-color: lightgrey;
+    height: 38px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(178, 178, 178);
+}
+
+.tabs>a {
+    text-transform: capitalize;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.middle {
+    height: calc(100% - 123px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.middle-left {
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: 18%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: rgb(200, 200, 214);
+}
+
+.menu {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* margin-left: 8px;
+    margin-top: 12px;
+    margin-right: 8px; */
+    margin: 20px 16px 0px 16px;
+
+}
+.menu>h2 {
+    font-family: gilroy;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.tab, .border {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+    /* text-decoration-line: underline;
+    text-decoration-style: dashed;
+    display: flex; */
+
+}
+
+.tab::after {
+    content: "";
+    display: block;
+    /* width: 100%; */
+    border-bottom: 2.3px dashed rgb(179, 178, 178);
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-right: 40px;
+}
+
+.middle-right {
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    width: 82%;
+}
+
+.middle-right>h1 {
+    font-family: gilroy;
+    margin: 35px 0px 12px 16px;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+img {
+    width: 350px;
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.middle-right>p {
+    margin: 7px 0px 10px 16px;
+}
+
+.coffee-content>h2 {
+    font-family: gilroy;
+    margin-left: 16px;
+}
+
+.coffee-content ul {
+    margin-left: 65px;
+}
+
+.coffee-content a {
+    color: blue;
+}
+
+.bottom {
+    height: 35px;
+    width: 100%;
+    bottom: 0%;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom>p {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}

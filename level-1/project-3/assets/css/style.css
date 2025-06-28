@@ -1,0 +1,177 @@
+/*JAI SHREE RAM*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 65px;
+}
+
+#nav-left {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#nav-right {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+#nav h3, h2, a {
+    font-size: 24px;
+    font-weight: 600;
+}
+#nav a {
+    text-decoration: none;
+    color: black;
+}
+#nav a:hover {
+    color: rgb(71, 71, 71);
+    text-decoration: underline;
+}
+
+#nav a:nth-of-type(3) {
+    position: relative;
+}
+
+#nav a:nth-of-type(3)::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 5px;
+    width: 6px;
+    background-color: darkorange;
+    border-radius: 90%;
+}
+
+#intro {
+    margin-top: 100px;
+    padding: 45px 65px;
+}
+
+#intro h3 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 6.5px;
+}
+#intro h1 {
+    font-size: 140px;
+    font-weight: 550;
+    letter-spacing: -8px;
+    word-spacing: 8px;
+    line-height: 136px;
+}
+#intro h1::selection {
+    color: yellowgreen;
+    background-color: black;
+}
+
+#content-heading {
+    padding: 45px 65px;
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#content-heading h3, h4 {
+    font-size: 26px;
+    font-weight: 530;
+}
+
+#content-heading-right {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+}
+
+#line {
+    height: 2px;
+    width: 130px;
+    background-color: black;
+}
+
+#content-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 65px;
+    gap: 65px;
+}
+
+.project {
+    width: 50%;
+}
+
+.project-img {
+    height: 705px;
+    width: 100%;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(10px 10px 25px rgb(52, 52, 52));
+    transition: all ease 1s;
+}
+
+#img1 {
+    background-image: url(../img/image.png);
+}
+#img2 {
+    background-image: url(../img/SmartHomeDashboard.jpg);
+}
+/* .project .project-img:hover {
+    scale: 1.05;
+} */
+
+.btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0px;
+}
+
+.btm i {
+    padding: 12px 30px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-weight: 800;
+}
+
+.btm i:hover {
+    background-color: black;
+    color: white;
+}
+
+.btm h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.btm h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(146, 146, 146);
+}

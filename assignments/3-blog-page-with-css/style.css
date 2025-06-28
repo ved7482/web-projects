@@ -1,0 +1,167 @@
+/*JAI SHREE RAM*/
+
+@font-face {
+    font-family: olimpos;
+    src: url(assets/fonts/Olimpos-Light-BF657c13eded83d.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.977);
+    font-family: olimpos;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    /* margin-left: 5px; */
+}
+
+#main>h1 {
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+#tabs {
+    background-color: rgb(5, 123, 197);
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+#tabs>p {
+    margin-right: 18px;
+}
+
+.bar {
+    color: black;
+}
+#blog1>h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+#blog1>h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px dotted gray;
+    margin-top: 10px;
+}
+
+.top-content {
+    margin-top: 10px;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;      
+    object-position: top;
+    display: flex;  
+    justify-self: center;
+    border-radius: 18px;
+    margin-top: 8px;
+}
+
+.middle-content {
+    margin-top: 10px;
+}
+
+.bottom-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bottom-content>h3 {
+    font-size: 23px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.bottom-content>ul {
+    list-style-position: inside;
+    /* list-style-type: disc; */
+    margin-left: 20px;
+}
+
+.bottom-content>ul>ul {
+    /* list-style-type: circle; */
+    margin-left: 20px;
+}
+
+#blog1 {
+    margin-bottom: 15px;
+}
+
+#blog2 {
+    margin-top: 15px;
+
+    margin-bottom: 10px;
+}
+
+#blog2>h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 14px;
+}
+
+#blog2>h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px dotted gray;
+    margin-top: 10px;
+}
+
+#blog2>.top-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list-heading {
+    margin-bottom: 7px;
+}
+
+.list {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.list>ol {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.list>ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+#blog2 .bottom-content {
+    margin-bottom: 30px;
+}
+
+.rights {
+    margin-top: 26px;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

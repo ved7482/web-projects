@@ -1,0 +1,39 @@
+<!-- JAI SHIYARAM -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | Forms</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form>
+        <!-- name="phone"
+
+Used to identify the field when the form is submitted
+The value will be sent to the server as phone=entered_value
+Essential for form processing and data handling
+Multiple elements can share the same name (like in radio buttons) -->
+
+        <label for="name">Name:</label><br>
+        <input id="name" name="box" required type="text">
+
+        <br><br><label for="email">Email:</label><br>
+        <input id="email" name="box" required type="email">
+        
+        <br><br><label for="phone">Phone Number:</label><br>
+        <input id="phone" required minlength="10" maxlength="10" pattern="[1-9][0-9]{9}" type="tel" title="Please enter a 10-digit phone number that doesn't start with 0">
+        <!-- <input type="tel" id="phone" name="box" pattern="[1-9]{3}[0-9]{3}[0-9]{4}" required /> -->
+
+        <br><br><label for="describtion">Message:</label>
+        <br><textarea name="box" id="describtion"></textarea>
+
+        <br><br><button type="submit"><b>Submit</b></button>
+        <!-- <input type="Submit"> -->
+
+    </form>
+</body>
+</html>
